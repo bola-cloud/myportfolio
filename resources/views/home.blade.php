@@ -743,7 +743,7 @@
                         <i class="bi bi-telephone flex-shrink-0"></i>
                         <div>
                         <h3>Call Us</h3>
-                        <p id="contact-phone">+20 155 562 2169</p>
+                        <p id="contact-phone"><a href="https://wa.me/201555622169" target="_blank" rel="noopener">+20 155 562 2169</a></p>
                         </div>
                     </div><!-- End Info Item -->
 
