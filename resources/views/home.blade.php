@@ -195,7 +195,7 @@
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
             <h2>Resume</h2>
-            <p>Experienced full-stack developer with hands-on experience building production-ready web applications, e-commerce platforms, and real-time dashboards. I focus on clear architecture, secure integrations, and measurable performance improvements.</p>
+            <p>Senior Full Stack Developer & DevOps Engineer — system architecture, high-availability platforms, and real-time integrations.</p>
         </div><!-- End Section Title -->
 
         <div class="container">
@@ -205,31 +205,34 @@
             <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
                 <div class="row">
                     <div class="col-md-6">
-                        <h3 class="resume-title">Summary</h3>
-
+                        <h3 class="resume-title">Bola Naguib</h3>
                         <div class="resume-item pb-0">
-                        <h4>Bola Eshak Naguib</h4>
-                        <p><em>Full Stack Developer (Laravel, Vue.js, IoT) with 4+ years of experience delivering scalable, high-performance web applications and real-time IoT dashboards. Proven expertise in Laravel backend, Vue.js front-end, WebSockets, and MySQL optimization.</em></p>
+                        <h4>Senior Full Stack Developer & DevOps Engineer</h4>
+                        <p><em>Cairo, Egypt</em></p>
                         <ul>
-                            <li>Cairo, Egypt</li>
-                            <li>Phone: (+20) 01555622169</li>
+                            <li>Phone: <a href="https://wa.me/201555622169" target="_blank" rel="noopener">+201555622169</a></li>
                             <li>Email: <a href="mailto:bola.ishak41@gmail.com">bola.ishak41@gmail.com</a></li>
+                            <li>LinkedIn: <a href="https://www.linkedin.com/in/bola-ishak-761000215" target="_blank" rel="noopener">linkedin.com/in/bola-ishak-761000215</a></li>
+                            <li>GitHub: <a href="https://github.com/bola-cloud" target="_blank" rel="noopener">github.com/bola-cloud</a></li>
+                            <li>Portfolio: <a href="https://bolaeshaq.wasl-x.com/" target="_blank" rel="noopener">bolaeshaq.wasl-x.com</a></li>
                         </ul>
                         </div><!-- End Resume Item -->
                     </div>
 
                     <div class="col-md-6">
-                        <h3 class="resume-title">Education &amp; Certifications</h3>
+                        <h3 class="resume-title">Professional Summary</h3>
                         <div class="resume-item">
-                        <h4>Communication and Electronics Engineering</h4>
-                        <h5>15/09/2018 – 12/07/2023</h5>
-                        <p><em>Faculty of Engineering, Minya University</em></p>
-                        </div><!-- End Resume Item -->
+                        <p>Highly accomplished Senior Full Stack Developer & DevOps Engineer with 5+ years of progressive experience in system architecture, Laravel (PHP 8), Vue.js 3, and IoT solutions. This tenure includes high-stakes professional and freelance development conducted concurrently with rigorous engineering studies, specializing in scalable ecosystems for the Finance, Healthcare, and Logistics sectors. Proven track record of building systems supporting 10,000+ users and 1,000+ concurrent transactions, distinguished for optimizing complex infrastructures and delivering real-time, high-availability platforms.</p>
+                        </div>
 
+                        <h3 class="resume-title mt-3">Technical Core Competencies</h3>
                         <div class="resume-item">
-                        <h4>Certificate in IoT and AI Applications</h4>
-                        <h5>01/09/2022 – 01/03/2023</h5>
-                        <p><em>NTI</em></p>
+                        <ul>
+                            <li><strong>Backend:</strong> Laravel (PHP 8), Node.js, RESTful APIs, OAuth2, JWT, Livewire, Microservices, Bash scripting</li>
+                            <li><strong>Frontend:</strong> Vue.js 3, JavaScript (ES6+), Tailwind CSS, AJAX, jQuery, Accessibility (WCAG 2.1)</li>
+                            <li><strong>DevOps & Cloud:</strong> AWS (EC2, S3, RDS), Docker, CI/CD, Ubuntu administration, Git/GitHub</li>
+                            <li><strong>Databases & IoT:</strong> MySQL/MariaDB optimization, MQTT, WebSockets, real-time synchronization</li>
+                        </ul>
                         </div>
                     </div>
                 </div>
@@ -242,193 +245,180 @@
                 </div>
 
                 <div class="row">
+
                     <div class="col-md-6" data-aos="fade-up">
                         <div class="resume-item">
-                        <h4>ICTC (in partnership with Masr El-Kheir Foundation; EU-supported) – Full-Stack Developer (Contract, Beneficiary Management Platform)</h4>
-                        <h5>01/08/2025 – 11/10/2025 — Cairo, Egypt</h5>
+                        <h4>Masqat App – HiSpeed Grocery | Full Stack Developer</h4>
+                        <h5>12/2025 – 01/2026 — Muscat, Oman</h5>
                         <ul>
-                            <li>Designed a two-step workflow: Inventory then Services Eligibility with conditional fields and inline validation.</li>
-                            <li>Implemented multi-auth, multi-tenant RBAC for associations and education centers using Laravel policies/gates and entity-scoped queries/exports.</li>
-                            <li>Built a 360-degree Refugee Profile aggregating forms, eligibility decisions, history, and attachments via polymorphic relations, pivot tables, and Eloquent casts.</li>
-                            <li>Delivered advanced search and filtering with selectable columns; optimized MySQL (indexes, eager loading, query tuning).</li>
-                            <li>Shipped streaming CSV exports (UTF-8 BOM) with Arabic/English labels and human-readable headers for ATS/HR ingestion.</li>
-                            <li>Produced an accessible, responsive UI (Blade, Bootstrap, jQuery, Select2) with WCAG-oriented interactions and full Arabic/English localization.</li>
-                            <li>Preserved legacy data paths; strengthened input validation and error handling.</li>
-                            <li>Scaled reliably to thousands of beneficiaries and tens of thousands of forms with low latency.</li>
+                            <li>Architected high-performance e-commerce platform processing 5,000+ daily orders with real-time inventory sync, achieving 99.8% uptime and <200ms API response times.</li>
+                            <li>Engineered seamless Smart ERP integration reducing stock discrepancies by 95% and eliminating manual price updates across 10,000+ SKUs.</li>
+                            <li>Implemented Thawani payment gateway with automated webhook validation, achieving 99.2% transaction success rate and zero payment disputes.</li>
+                            <li>Optimized RESTful API architecture with Redis caching and query tuning, reducing database load by 60% and enabling concurrent access for 2,000+ users.</li>
                         </ul>
                         </div>
                     </div>
 
                     <div class="col-md-6" data-aos="fade-up">
                         <div class="resume-item">
-                        <h4>Masqat App – Full-Stack Developer (Part-Time, Contract)</h4>
-                        <h5>10/03/2025 – Current — Remote (Oman)</h5>
+                        <h4>Alsa7a Sports Platform | Full Stack Developer (Freelance)</h4>
+                        <h5>11/2025 – Current — Muscat, Oman</h5>
                         <ul>
-                            <li>Built and maintained a FinTech + education platform for paid financial courses with annual subscriptions.</li>
-                            <li>Integrated Thawani payment gateway with webhook verification for subscription lifecycle (create, renew, cancel, refund) and invoice/receipt generation.</li>
-                            <li>Implemented subscription access controls (RBAC) and entitlement checks to gate premium course content.</li>
-                            <li>Developed responsive UIs with Laravel Blade and AJAX; added dashboards for users, courses, payments, and reports.</li>
-                            <li>Delivered real-time support chat for customers and admins (WebSockets/long-polling), with message persistence and notifications.</li>
-                            <li>Optimized MySQL performance (indexes, query refactors, caching) and hardened security (JWT/OAuth2, validation, rate limiting).</li>
-                            <li>Deployed on Linux with Docker and monitoring/backups; provided ongoing part-time support for bug fixes, hotfix releases, and performance tuning under defined SLAs.</li>
+                            <li>Built multi-sided sports marketplace connecting 500+ athletes with certified service providers, processing $50K+ in bookings within first 3 months.</li>
+                            <li>Engineered automated commission distribution system with escrow logic, provider vetting workflows, and secure multi-party payouts reducing manual processing by 90%.</li>
+                            <li>Integrated Thawani payment gateway with real-time webhook validation for event bookings, achieving 99.5% payment success rate and instant confirmation.</li>
+                            <li>Developed comprehensive admin dashboard managing 200+ provider profiles, club operations, and revenue analytics with role-based access control.</li>
                         </ul>
                         </div>
                     </div>
 
                     <div class="col-md-6" data-aos="fade-up">
                         <div class="resume-item">
-                        <h4>Self-Employed — Followers Management Platform – Full-Stack Developer (Contract)</h4>
-                        <h5>01/07/2025 – Current — Cairo, Egypt</h5>
+                        <h4>EU-Partnered Education Project (ICTC) | Full Stack Developer</h4>
+                        <h5>08/2025 – 10/2025 — Cairo, Egypt</h5>
                         <ul>
-                            <li>Built a social-media engagement platform with Laravel (PHP) backend and Node.js workers; real-time order processing via MQTT and WebSockets.</li>
-                            <li>Designed for 10,000+ active users and 1,000+ orders/day using Redis caching, queues (Horizon), and rate limiting to keep latency low.</li>
-                            <li>Delivered an admin dashboard with advanced filtering/search, bulk actions, and audit logs for orders, users, and promotions.</li>
-                            <li>Implemented automated eligibility checks, points/credits, and cooldown logic to prevent abuse.</li>
-                            <li>Secured auth with JWT and enforced RBAC for multi-role permissions.</li>
-                            <li>Optimized MySQL with composite indexes and query tuning; streamlined background jobs for high-concurrency workloads.</li>
-                            <li>Added logging, metrics, and alerts to monitor throughput, failures, and latency.</li>
+                            <li>Architected enterprise-grade beneficiary management platform processing 15,000+ refugee applications with complex two-step eligibility workflow, reducing processing time by 70%.</li>
+                            <li>Engineered multi-tenant RBAC system with polymorphic relations serving 50+ associations and education centers, with entity-scoped data isolation and granular permissions.</li>
+                            <li>Built 360° profile aggregator consolidating 10+ form types, history, and attachments with advanced search across 50,000+ records and <500ms query response.</li>
+                            <li>Delivered streaming CSV exports with UTF-8 BOM support and bilingual headers (Arabic/English), enabling seamless ATS integration for partner organizations.</li>
                         </ul>
                         </div>
                     </div>
 
                     <div class="col-md-6" data-aos="fade-up">
                         <div class="resume-item">
-                        <h4>Mazaya Almasya – Full-Stack Developer (IoT, Full-Time)</h4>
-                        <h5>20/12/2024 – 28/02/2025 — Cairo, Egypt</h5>
+                        <h4>Masqat App – Financial & IoT | Full Stack Developer</h4>
+                        <h5>03/2025 – Current — Remote</h5>
                         <ul>
-                            <li>Built a smart-home dashboard with Laravel and Livewire for real-time device monitoring and control.</li>
-                            <li>Integrated MQTT and WebSockets for bidirectional comms between mobile/web clients and embedded devices (topics, QoS, retained messages).</li>
-                            <li>Designed and optimized RESTful APIs for the mobile app; reduced average API latency and improved reliability.</li>
-                            <li>Enhanced security and scalability with JWT auth, RBAC, rate limiting, input validation, and structured logging.</li>
-                            <li>Added background jobs/queues and Redis caching to handle spikes and smooth device telemetry ingestion.</li>
-                            <li>Collaborated with embedded engineers to streamline firmware-to-server communication and error handling.</li>
+                            <li>Engineered financial and accounting applications using Laravel (PHP 8), achieving 30% faster data retrieval through MySQL indexing and query optimization.</li>
+                            <li>Developed Vue.js 3 components integrated with WebSockets for real-time financial dashboards.</li>
+                            <li>Configured and deployed applications using Docker and CI/CD pipelines for cross-border teams.</li>
                         </ul>
                         </div>
                     </div>
 
                     <div class="col-md-6" data-aos="fade-up">
                         <div class="resume-item">
-                        <h4>ICTC – Full-Stack Web Developer (Contract, CMS Development)</h4>
-                        <h5>01/12/2024 – 11/06/2025 — Cairo, Egypt</h5>
+                        <h4>WaslX Platform (Mwaslx) | Full-Stack & DevOps Engineer</h4>
+                        <h5>02/2025 – Current — Remote</h5>
                         <ul>
-                            <li>Built a dynamic portfolio and corporate site with a custom Laravel CMS, enabling non-technical staff to manage pages, media, and menus.</li>
-                            <li>Delivered an accessible, responsive UI aligned with WCAG 2.1; tested across desktop and mobile.</li>
-                            <li>Implemented Careers: job listings, search/filter, application forms, and secure CV upload with validation and admin review queue.</li>
-                            <li>Added interest-capture and lead forms; routed submissions to the appropriate team with email notifications.</li>
-                            <li>Improved SEO (structured data, sitemaps, meta/OG tags, clean slugs) and performance; increased organic traffic ~25% in 2 months.</li>
-                            <li>Optimized performance with lazy loading, image compression, and MySQL query tuning; reduced page load times.</li>
-                            <li>Hardened security with input validation, file-type checks, rate limiting, and role-based admin access.</li>
-                        </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="resume-item">
-                        <h4>Edu-Lens – Full-Stack Developer (Fulltime, EdTech)</h4>
-                        <h5>30/12/2023 – 01/09/2024 — Giza, Egypt</h5>
-                        <ul>
-                            <li>Stabilized the e-learning platform by triaging and fixing critical defects in the dashboard, course, and exams modules; reduced production error rate and support tickets.</li>
-                            <li>Optimized Laravel/MySQL performance (indexes, query refactors, caching, queues) and streamlined backend workflows.</li>
-                            <li>Scaled the system to support 10,000+ students concurrently with reliable exam sessions and progress tracking.</li>
-                            <li>Designed a private learning portal for a single instructor (course/lesson management, enrollments, RBAC).</li>
-                            <li>Built a youth-focused course site with gamified elements (points, badges, progress).</li>
-                            <li>Hardened server security and reliability (HTTPS, OS/PHP/Nginx updates, automated backups, logging/monitoring).</li>
-                        </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="resume-item">
-                        <h4>Saudi German Hospital Cairo – Full-Stack Laravel Developer (Contract)</h4>
-                        <h5>01/08/2024 – 01/08/2025 — Cairo, Egypt</h5>
-                        <ul>
-                            <li>Designed an automated advertising/orchestration platform for a Flutter digital-signage app; scheduled targeted content across multiple sites and device groups.</li>
-                            <li>Built an admin dashboard for campaign management, playlists, targeting, time windows, and performance tracking (Laravel, Blade/Livewire, MySQL).</li>
-                            <li>Implemented Laravel Scheduler with queued jobs and cron to control ad rotation and timing; added retries and audit logs.</li>
-                            <li>Integrated MQTT to push real-time updates to devices (retained messages, QoS 1) with fallback polling to ensure reliable sync.</li>
-                            <li>Optimized MySQL using composite indexes and query tuning; introduced Redis caching to reduce latency under high load.</li>
-                            <li>Engineered the platform to operate at 1,000+ screens concurrently with stable throughput and low downtime.</li>
-                            <li>Added RBAC, input validation, and structured logging/monitoring for operational visibility and security.</li>
-                        </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="resume-item">
-                        <h4>Ajyalona – Full-Stack Developer (Contract)</h4>
-                        <h5>14/06/2024 – 01/09/2024 — Remote, Egypt</h5>
-                        <ul>
-                            <li>Built Ajyalona, a news and podcast platform with a custom Laravel CMS and AJAX admin panel.</li>
-                            <li>Developed RESTful APIs and feed ingesters (RSS/JSON) for automated news updates; scheduled with cron/queues.</li>
-                            <li>Improved SEO (clean slugs, sitemap, meta/OG tags, schema.org) and accessibility (WCAG); increased engagement 20%.</li>
-                            <li>Optimized MySQL queries and added Redis caching; stabilized high-traffic performance.</li>
-                            <li>Implemented podcast publishing (RSS feed), media management, and analytics dashboards.</li>
-                            <li>Handled deployments via FTP, maintaining environment parity, structured upload directories, and versioned backups for rollback safety.</li>
-                        </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="resume-item">
-                        <h4>Menamaher BigBen – Full-Stack Developer (Contract, EdTech)</h4>
-                        <h5>01/02/2024 – Current</h5>
-                        <ul>
-                            <li>Built a cross-platform education platform with a Flutter mobile app and Laravel/Livewire web dashboard.</li>
-                            <li>Designed RESTful APIs to connect mobile and web; delivered real-time course/exam updates via queues/WebSockets/FCM.</li>
-                            <li>Implemented subscription billing with role-based access (RBAC) and secure auth (JWT/OAuth2).</li>
-                            <li>Shipped admin/teacher dashboards with analytics, content control, and subscription management.</li>
-                            <li>Optimized MySQL with indexing and query tuning; added Redis caching and background jobs (Horizon) to improve latency.</li>
-                            <li>Automated CI/CD and Dockerized deployments; added error monitoring and backups.</li>
-                        </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="resume-item">
-                        <h4>Self-Employed — Full-Stack Developer (E-commerce Retailer) – Full-Stack Developer (Contract)</h4>
-                        <h5>05/12/2023 – 01/02/2024</h5>
-                        <ul>
-                            <li>Built a responsive e-commerce site with faceted category/brand filters, search, and secure checkout (Laravel, Livewire, MySQL).</li>
-                            <li>Delivered an admin dashboard for product, order, inventory, promotions, and coupon workflows.</li>
-                            <li>Integrated payment gateways with webhook verification; automated invoices and email/SMS notifications.</li>
-                            <li>Optimized performance for high traffic using composite indexes, query tuning, Redis caching, and background queues (Horizon).</li>
-                            <li>Implemented order lifecycle (pending/paid/shipped/returned) and refund flows; improved ops visibility with analytics and reports.</li>
-                            <li>Containerized deployments with Docker and set up CI/CD, backups, and centralized error logging.</li>
-                        </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="resume-item">
-                        <h4>Novel – Full Stack Developer (ERP Systems, Web Optimization)</h4>
-                        <h5>01/09/2023 – 29/12/2023 — Minya, Egypt</h5>
-                        <ul>
-                            <li>Led development of a custom ERP system from requirements gathering to deployment.</li>
-                            <li>Modernized company websites, boosting load speed and SEO rankings.</li>
-                            <li>Conducted regular code reviews to maintain quality and performance standards.</li>
-                        </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="resume-item">
-                        <h4>Self-Employed — Product Owner – POS & Inventory (Founder & Full-Stack Developer)</h4>
-                        <h5>01/12/2021 – 08/06/2025 — Cairo, Egypt</h5>
-                        <ul>
-                            <li>Built and productized a POS and inventory system (Laravel, MySQL, jQuery/AJAX) and deployed it to multiple paying clients.</li>
-                            <li>Implemented role-based permissions, multi-level user management, audit logging, and treasury tracking.</li>
-                            <li>Added dynamic pricing, returns management, and cashier workflows; integrated barcode/receipt printing.</li>
-                            <li>Automated low-stock alerts and purchase order generation; reduced stockouts by ~20% across clients.</li>
-                            <li>Delivered a real-time sales analytics dashboard (daily/weekly/monthly KPIs) with drill-down reports.</li>
-                            <li>Optimized MySQL with composite indexes and query tuning; cut report times from minutes to seconds.</li>
-                            <li>Packaged installs with Docker, set up CI/CD and nightly backups; provided SLA-based maintenance and support.</li>
-                            <li>Led client onboarding, customization, and data migration; managed licensing, invoicing, and renewals.</li>
+                            <li>Built WhatsApp OTP automation service processing 50,000+ daily verifications with 99.7% delivery rate, reducing authentication friction by 85%.</li>
+                            <li>Architected high-volume RESTful APIs handling 200+ req/sec for delivery tracking, order management, and payment workflows with <150ms average latency.</li>
+                            <li>Engineered cloud infrastructure with Docker, Kubernetes, and CI/CD pipelines achieving 99.95% uptime and zero-downtime deployments.</li>
+                            <li>Implemented Redis caching layer, database indexing, and horizontal scaling reducing infrastructure costs by 40% while handling 3x traffic growth.</li>
                         </ul>
                         </div>
                     </div>
 
                 </div>
             </div>
+
+            <div class="col-lg-12 mt-5" data-aos="fade-up">
+                <div class="d-flex justify-content-center"><h3 class="resume-title">Selected Freelance & High-Scale Projects</h3></div>
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="resume-item">
+                        <h4>Followers Management Platform | System Architect</h4>
+                        <h5>07/2025 – Current</h5>
+                        <ul>
+                            <li>Architected high-scale social media engagement platform supporting 10,000+ active users and processing 1,000+ orders/day with real-time order fulfillment via MQTT/WebSockets.</li>
+                            <li>Engineered Laravel backend with Node.js workers, Redis queues (Horizon), and automated eligibility checks reducing fraud by 80% and processing time by 65%.</li>
+                            <li>Built comprehensive admin dashboard with advanced filtering, bulk operations, and audit logging managing $100K+ monthly transaction volume.</li>
+                            <li>Optimized MySQL with composite indexes and query tuning achieving <100ms query response under 500 concurrent operations, enabling seamless real-time updates.</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="resume-item">
+                        <h4>Saudi German Hospital (Advertising Automation) | Lead Developer</h4>
+                        <h5>08/2024 – 08/2025</h5>
+                        <ul>
+                            <li>Engineered enterprise digital signage orchestration platform managing 1,000+ screens across multiple hospital sites with real-time content distribution and centralized campaign control.</li>
+                            <li>Built automated scheduling system with Laravel queues, cron jobs, and MQTT (QoS 1) achieving 99.8% sync reliability and <2-second content delivery latency.</li>
+                            <li>Developed campaign management dashboard with targeting rules, time-window controls, and performance analytics reducing manual effort by 90%.</li>
+                            <li>Optimized MySQL with composite indexes and Redis caching supporting concurrent access from 1,000+ devices with <200ms API response times.</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="resume-item">
+                        <h4>Mazaya Almasya (Smart Home IoT) | Full Stack Developer</h4>
+                        <h5>12/2024 – 02/2025</h5>
+                        <ul>
+                            <li>Architected real-time IoT dashboard with Laravel/Livewire managing 500+ connected devices with bidirectional control via MQTT/WebSockets achieving <300ms command latency.</li>
+                            <li>Engineered mobile-responsive RESTful APIs for iOS/Android apps reducing average API response time by 45% through query optimization and Redis caching.</li>
+                            <li>Implemented JWT authentication, RBAC, and rate limiting securing 2,000+ user accounts with zero security incidents during production operation.</li>
+                            <li>Built background job queues for device telemetry ingestion processing 100K+ sensor readings/day with automated alerting for anomaly detection.</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="resume-item">
+                        <h4>Edu-Lens | Full Stack Developer</h4>
+                        <h5>12/2023 – 09/2024</h5>
+                        <ul>
+                            <li>Stabilized production e-learning platform serving 10,000+ concurrent students, reducing critical error rate by 80% and support tickets by 65% through systematic debugging.</li>
+                            <li>Optimized Laravel/MySQL performance with strategic indexing, query refactoring, and Redis caching cutting page load times by 55% and database CPU by 70%.</li>
+                            <li>Built gamified youth learning portal with points, badges, and progress tracking increasing student engagement by 40% and course completion rates by 30%.</li>
+                            <li>Engineered private instructor portal with course management, enrollment workflows, and RBAC supporting secure multi-instructor operations.</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 mt-5" data-aos="fade-up">
+                <div class="d-flex justify-content-center"><h3 class="resume-title">Additional Experience</h3></div>
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="resume-item">
+                        <h4>Novel, Menamaher BigBen, Ajyalona, ICTC CMS — Various Roles</h4>
+                        <ul>
+                            <li>Lead ERP development, cross-platform education apps, news & podcast platforms, and CMS projects; responsibilities included architecture, implementation and deployment.</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 mt-5" data-aos="fade-up">
+                <div class="d-flex justify-content-center"><h3 class="resume-title">Education & Certifications</h3></div>
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="resume-item">
+                        <h4>Communication and Electronics Engineer</h4>
+                        <h5>2018 – 2023</h5>
+                        <p><em>Faculty of Engineering, Minya University</em></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="resume-item">
+                        <h4>Certificate in IoT and AI Applications</h4>
+                        <h5>2022 – 2023</h5>
+                        <p><em>National Telecommunication Institute (NTI)</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 mt-5" data-aos="fade-up">
+                <div class="d-flex justify-content-center"><h3 class="resume-title">Languages &amp; Soft Skills</h3></div>
+                <div class="row">
+                    <div class="col-md-12" data-aos="fade-up">
+                        <div class="resume-item">
+                        <ul>
+                            <li><strong>Languages:</strong> Arabic (Mother Tongue), English (B2/C1 Professional)</li>
+                            <li><strong>Soft Skills:</strong> Engineering Leadership, Resilient Problem Solving, Cross-border Collaboration, Technical Documentation, Strategic Decision-making</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                </div>
             </div>
             </div>
 
@@ -469,6 +459,19 @@
                     <p>Financial & accounting applications with Laravel, Vue.js, and MySQL optimization</p>
                     <a href="{{ asset('projects/aci.png') }}" title="Masqat App" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                     <a href="{{ route('portfolio.detail', 'masqat') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                </div>
+                </div><!-- End Portfolio Item -->
+
+                <!-- Alsa7a Sports Services -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-sports">
+                <div class="portfolio-content h-100">
+                    <img src="{{ asset('projects/alsa7a.png') }}" class="img-fluid" alt="Alsa7a Sports Services">
+                    <div class="portfolio-info">
+                    <h4>Alsa7a - Sports Services Platform</h4>
+                    <p>Player photography, physiotherapy and club service bookings — managed schedules and club-to-club service offers.</p>
+                    <a href="{{ asset('projects/alsa7a.png') }}" title="Alsa7a" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="{{ route('portfolio.detail', 'alsa7a') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                     </div>
                 </div>
                 </div><!-- End Portfolio Item -->

@@ -12,7 +12,8 @@ class PortfolioController extends Controller
             'category' => 'Full Stack Development',
             'client' => 'Masqat App (Remote, Oman)',
             'date' => '10/03/2025 – Current',
-            'url' => 'https://acifma-oman.org.om',
+            'url' => 'http://hispeed.om/',
+            'related_urls' => ['https://acifma-oman.org.om/'],
             'description' => 'Developed and maintained financial & accounting applications using Laravel (PHP 8) and MySQL for a remote client in Oman.',
             'features' => [
                 'Built financial & accounting applications achieving 30% faster data retrieval via query optimization',
@@ -168,7 +169,7 @@ class PortfolioController extends Controller
             'category' => 'Full Stack Development',
             'client' => 'Freelance (Cairo, Egypt)',
             'date' => 'Various Dates',
-            'url' => null,
+            'url' => 'https://www.cashier.infinitsmart.com/',
             'description' => 'Designed a complete POS & inventory system with cashier, returns, and dynamic pricing modules.',
             'features' => [
                 'Built complete POS system with cashier, returns, and dynamic pricing',
@@ -187,7 +188,7 @@ class PortfolioController extends Controller
             'category' => 'E-Commerce Development',
             'client' => 'Novel (Minya, Egypt)',
             'date' => 'Various Dates',
-            'url' => 'https://skintreat-oman.com/',
+            'url' => null,
             'description' => 'Built a responsive e-commerce platform with category-based product filtering and secure checkout.',
             'features' => [
                 'Created responsive e-commerce platform with category-based filtering',
@@ -201,14 +202,34 @@ class PortfolioController extends Controller
                 'template/assets/img/portfolio/product-3.jpg'
             ]
         ],
+        'alsa7a' => [
+            'title' => 'Alsa7a Sports Platform - Sports Services & Club Collaboration',
+            'category' => 'Sports Services Platform',
+            'client' => 'Alsa7a / Saha (Muscat, Oman)',
+            'date' => '11/2025 – Current',
+            'url' => 'https://saha.wasl-x.com/login',
+            'description' => 'Platform for delivering sports-related services (player photography, physiotherapy, training services) and enabling clubs to book or offer player services to third parties.',
+            'features' => [
+                'Supported service providers (photographers, physiotherapists, trainers) to publish offerings and availability',
+                'Enabled clubs to contract players for services or book external providers on behalf of players',
+                'Managed bookings, scheduling, and automated confirmations with webhook-driven notifications',
+                'Built provider vetting, profile management, and admin dashboards with RBAC and audit logs',
+                'Processed payments and commission flows with secure gateway integration and reporting'
+            ],
+            'tech_stack' => ['Laravel', 'Vue.js', 'MySQL', 'Thawani', 'Docker', 'Redis'],
+            'images' => [
+                'projects/alsa7a.png'
+            ]
+        ],
         'skintreat' => [
             'title' => 'Skintreat - Cosmetics E-Commerce (Oman)',
             'category' => 'E-Commerce',
-            'client' => 'Skintreat (Oman)',
+            'client' => 'Muscat Apps (Freelance)',
             'date' => '2025',
             'url' => 'https://skintreat-oman.com/',
             'description' => 'An e-commerce store for cosmetics with a secure Thawani payment gateway integration (Oman). Built to provide a fast, mobile-friendly shopping experience with inventory and order management.',
             'features' => [
+                'Freelance development engagement for Muscat Apps',
                 'Product catalog with categories, filters, and search',
                 'Secure checkout integrated with Thawani (Oman) for card and local payments',
                 'Order management with webhooks for payment status updates',
