@@ -4,13 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Eng: Bola Eshak Portfolio</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <title>Bola Naguib (Bola Ishak) — Senior Full-Stack & DevOps Engineer | Enterprise SaaS, FinTech & Cloud Architect</title>
+    <meta content="Portfolio of Bola Naguib (Bola Ishak) — Senior Full-Stack & DevOps Engineer & Technical Consultant with 5+ years of experience in Enterprise SaaS, FinTech, Microservices, Real-time IoT, Docker, and AWS Cloud Architecture." name="description">
+    <meta content="Bola Naguib, Bola Ishak, Senior Full-Stack Engineer, DevOps Engineer, Technical Consultant, Laravel, Vue.js, Docker, AWS, MySQL Optimization, Redis, Microservices, FinTech, MEN TOO, Wasl-X, Clinova" name="keywords">
+    
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Bola Naguib — Senior Full-Stack & DevOps Engineer | Enterprise SaaS & Cloud Architect">
+    <meta property="og:description" content="Senior Full-Stack & DevOps Engineer with 5+ years building scalable SaaS, FinTech, and real-time distributed platforms. Available for Remote Contracts & Consultancy.">
+    <meta property="og:image" content="{{ asset('projects/mentoo.jpg') }}">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
 
     <!-- Favicons -->
-    <link href="{{ asset('template/assets/img/bola.jpeg') }}" rel="icon">
-    <link href="{{ asset('template/assets/img/bola.jpeg') }}" rel="apple-touch-icon">
+    <link href="{{ asset('template/assets/img/bola-profile.png') }}?v=2" rel="icon">
+    <link href="{{ asset('template/assets/img/bola-profile.png') }}?v=2" rel="apple-touch-icon">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -26,14 +33,7 @@
 
     <!-- Main CSS File -->
     <link href="{{ asset('template/assets/css/main.css') }}" rel="stylesheet">
-
-    <!-- =======================================================
-    * Template Name: iPortfolio
-    * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-    * Updated: Jun 29 2024 with Bootstrap v5.3.3
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
+    @stack('styles')
 </head>
 
 <body class="index-page">
@@ -42,20 +42,20 @@
         <i class="header-toggle d-xl-none bi bi-list"></i>
 
         <div class="profile-img">
-        <img src="{{ asset('template/assets/img/bola.jpeg') }}" alt="" class="img-fluid rounded-circle">
+        <img src="{{ asset('template/assets/img/bola-profile.png') }}?v=2" alt="Bola Naguib" class="img-fluid rounded-circle shadow" style="aspect-ratio: 1/1; object-fit: cover;">
         </div>
 
-        <a href="{{ url('/') }}" class="logo d-flex align-items-center justify-content-center">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="assets/img/logo.png" alt=""> -->
-            <h1 class="sitename">Bola Eshak</h1>
-            </a>
+        <a href="{{ url('/') }}" class="logo d-flex flex-column align-items-center justify-content-center text-decoration-none">
+            <h1 class="sitename mb-0">Bola Naguib</h1>
+            <span class="text-white-50 small mt-1 text-center" style="font-size: 0.75rem; letter-spacing: 0.5px;">Senior Full-Stack & DevOps</span>
+        </a>
 
-            <div class="social-links text-center">
-            <a href="https://www.facebook.com/share/19hzbRL475/?mibextid=wwXIfr" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/bola_ishak?igsh=MXY3MDF0aWxmNmFicA%3D%3D&utm_source=qr" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/bola-ishak-761000215/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
+        <div class="social-links text-center mt-2">
+            <a href="https://github.com/bola-cloud" target="_blank" rel="noopener" class="github" title="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/bola-ishak-761000215/" target="_blank" rel="noopener" class="linkedin" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/971555873368" target="_blank" rel="noopener" class="whatsapp" title="WhatsApp (UAE &amp; EG)"><i class="bi bi-whatsapp"></i></a>
+            <a href="mailto:bola.ishak41@gmail.com" class="google-plus" title="Email"><i class="bi bi-envelope"></i></a>
+        </div>
 
             <nav id="navmenu" class="navmenu">
             <ul>
@@ -104,7 +104,7 @@
 
     <!-- Main JS File -->
     <script src="{{ asset('template/assets/js/main.js') }}"></script>
-    @stack('styles')
+    @stack('scripts')
 </body>
 
 </html>
