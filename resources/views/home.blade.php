@@ -404,6 +404,56 @@
                         </div>
                     </div>
 
+                    <!-- HiSpeed -->
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="resume-item border-start border-3 border-success ps-3">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <h4 class="mb-0 text-dark">HiSpeed | Lead Full-Stack Architect &amp; Systems Integration</h4>
+                            <span class="badge bg-success small fw-bold">Omnichannel Quick-Commerce</span>
+                        </div>
+                        <h5 class="text-secondary small">2024 – Current — Muscat, Oman</h5>
+                        <ul>
+                            <li>Architected continuous bi-directional inventory, pricing, and invoice sync pipelines between Laravel and Smart ERP without race conditions.</li>
+                            <li>Automated real-time WhatsApp Business catalog mirroring dynamically reflecting stock levels and product updates.</li>
+                            <li>Engineered low-latency WebSocket connections powering both in-store thermal receipt printers and delivery driver dispatch apps.</li>
+                            <li>Integrated secure checkout workflows via Oman's Thawani Payment Gateway alongside Cash on Delivery.</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <!-- Alkatar -->
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="resume-item border-start border-3 border-secondary ps-3">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <h4 class="mb-0 text-dark">Alkatar | Lead Full-Stack Developer &amp; E-Commerce Architect</h4>
+                            <span class="badge bg-secondary small fw-bold">Specialty Retail &amp; Gifting</span>
+                        </div>
+                        <h5 class="text-secondary small">2024 – Current — Muscat, Oman</h5>
+                        <ul>
+                            <li>Designed dynamic checkout customizer for bespoke luxury packaging, custom gift cards, and automated promotional items.</li>
+                            <li>Connected storefront orders directly to packing stations via WebSockets for instant receipt/label generation and rider notification.</li>
+                            <li>Integrated Thawani gateway with automated verification of digital receipts and instant transaction status callbacks.</li>
+                            <li>Implemented image asset compression and query caching to maintain lightning-fast category navigation across extensive catalogs.</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <!-- Khairat Al-Anaam -->
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="resume-item border-start border-3 border-danger ps-3">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <h4 class="mb-0 text-dark">Khairat Al-Anaam | Senior Backend &amp; Payment Integration Specialist</h4>
+                            <span class="badge bg-danger small fw-bold">Variable-Weight Commerce</span>
+                        </div>
+                        <h5 class="text-secondary small">2024 – Current — Muscat, Oman</h5>
+                        <ul>
+                            <li>Engineered custom product attributes for butchery operations (packaging styles, preparation cuts, dynamic weight-tier pricing).</li>
+                            <li>Integrated Oman's OM Pay digital payment infrastructure with secure webhooks and reconciliation logs.</li>
+                            <li>Broadcasting WebSocket events to stream incoming butchery orders directly to prep-station printers and delivery queues.</li>
+                        </ul>
+                        </div>
+                    </div>
+
                     <!-- Clinova -->
                     <div class="col-md-6" data-aos="fade-up">
                         <div class="resume-item border-start border-3 border-info ps-3">
@@ -549,7 +599,7 @@
                         $thumb = data_get($proj, 'images.0');
                         $filterClass = data_get($proj, 'filter_class', 'filter-saas');
                         $badge = data_get($proj, 'badge');
-                        $isFlagship = in_array($slugKey, ['men-too', 'wasl-x', 'clinova', 'modular-erp']);
+                        $isFlagship = in_array($slugKey, ['men-too', 'wasl-x', 'hispeed', 'alkatar', 'khairat-alanaam', 'clinova', 'modular-erp']);
                     @endphp
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item {{ $filterClass }}">
@@ -569,7 +619,19 @@
                                         {{ data_get($proj, 'category') }}
                                     </span>
                                     @if($badge)
-                                        <span class="badge {{ $slugKey === 'modular-erp' ? 'bg-warning text-dark border border-dark border-opacity-25 fw-bold' : ($slugKey === 'men-too' ? 'bg-warning text-dark fw-bold' : ($slugKey === 'wasl-x' ? 'bg-primary text-white fw-bold' : 'bg-info text-white fw-bold')) }} px-2 py-1 rounded-pill small">
+                                        @php
+                                            $badgeClass = match($slugKey) {
+                                                'men-too' => 'bg-warning text-dark fw-bold',
+                                                'wasl-x' => 'bg-primary text-white fw-bold',
+                                                'hispeed' => 'bg-success text-white fw-bold',
+                                                'alkatar' => 'bg-secondary text-white fw-bold',
+                                                'khairat-alanaam' => 'bg-danger text-white fw-bold',
+                                                'clinova' => 'bg-info text-white fw-bold',
+                                                'modular-erp' => 'bg-warning text-dark border border-dark border-opacity-25 fw-bold',
+                                                default => 'bg-info text-white fw-bold'
+                                            };
+                                        @endphp
+                                        <span class="badge {{ $badgeClass }} px-2 py-1 rounded-pill small">
                                             {{ $badge }}
                                         </span>
                                     @endif
@@ -852,11 +914,6 @@
             <p class="small text-muted mb-0">Senior Full-Stack &amp; DevOps Engineer | Enterprise SaaS, FinTech &amp; Cloud Architect</p>
         </div>
         </div>
-
-    </footer>
-
-    <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Preloader -->
     <div id="preloader"></div>

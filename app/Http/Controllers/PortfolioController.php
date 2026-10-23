@@ -53,6 +53,71 @@ class PortfolioController extends Controller
                 'projects/waslx.jpg'
             ]
         ],
+        'hispeed' => [
+            'title' => 'HiSpeed — Omnichannel Fresh Produce & Quick-Commerce Ecosystem',
+            'category' => 'FinTech & Quick-Commerce',
+            'filter_class' => 'filter-fintech filter-saas',
+            'badge' => 'Omnichannel Retail & ERP',
+            'role' => 'Lead Full-Stack Architect & Systems Integration Engineer',
+            'client' => 'HiSpeed (Muscat, Oman)',
+            'date' => '2024 – Current',
+            'url' => 'https://hispeed.om/',
+            'short_summary' => 'High-volume fresh produce and grocery platform featuring bi-directional Smart ERP synchronization, automated WhatsApp catalog mirroring, in-store thermal printing, and real-time courier dispatch.',
+            'description' => 'Architected and developed HiSpeed, a high-volume omnichannel fresh grocery and quick-commerce ecosystem in Oman. Engineered continuous bi-directional inventory, pricing, and invoice synchronization with Smart ERP without race conditions. Integrated low-latency WebSockets powering both an in-store thermal receipt printing application and a dedicated delivery driver dispatch app, and automated WhatsApp Business catalog mirroring alongside secure Thawani payment checkout.',
+            'features' => [
+                'Bi-Directional Smart ERP Synchronization: Architected continuous inventory, pricing, and invoice sync pipelines between Laravel and Smart ERP without race conditions.',
+                'WhatsApp Business Catalog Sync: Automated real-time catalog syncing, dynamically reflecting stock levels and product updates inside the WhatsApp Commerce catalog.',
+                'Real-Time WebSockets Engine: Engineered low-latency WebSocket connections powering both an in-store thermal receipt printing application and a dedicated delivery driver dispatch app.',
+                'Fintech Integration: Deployed secure checkout workflows via Oman\'s Thawani Payment Gateway alongside Cash on Delivery with automated webhook validation.'
+            ],
+            'tech_stack' => ['PHP 8.2', 'Laravel', 'MySQL', 'Redis', 'WebSockets', 'Thawani Gateway', 'Smart ERP REST API', 'WhatsApp Business API'],
+            'images' => [
+                'projects/hispeed.jpg'
+            ]
+        ],
+        'alkatar' => [
+            'title' => 'Alkatar — Specialty Coffee, Roastery & Gourmet Gifting Platform',
+            'category' => 'SaaS & Specialty Retail',
+            'filter_class' => 'filter-saas',
+            'badge' => 'Specialty Retail & Gifting',
+            'role' => 'Lead Full-Stack Developer & E-Commerce Architect',
+            'client' => 'Alkatar Specialty Coffee (Muscat, Oman)',
+            'date' => '2024 – Current',
+            'url' => 'https://alkatar.com/',
+            'short_summary' => 'Direct-to-consumer gourmet coffee, regional confectionery, and specialty accessories e-commerce engine featuring bespoke gift-packaging logic and automated real-time dispatch.',
+            'description' => 'Engineered Alkatar, an artisanal direct-to-consumer gourmet coffee, roastery, and gifting commerce platform in Oman. Designed a dynamic checkout customizer allowing customers to select bespoke luxury packaging, custom gift cards, and automated promotional items. Connected storefront orders directly to packing stations via WebSockets for instant receipt/label generation and rider notification.',
+            'features' => [
+                'Custom Gifting & Packaging Engine: Designed a dynamic checkout customizer allowing customers to select bespoke luxury packaging, custom gift cards, and automated promotional item additions.',
+                'Real-Time Fulfillment: Connected storefront orders directly to packing stations via WebSockets for instant receipt/label generation and rider notification.',
+                'Payment Processing: Integrated Thawani gateway with automated verification of digital receipts and instant transaction status callbacks.',
+                'Performance Optimization: Implemented image asset compression and query caching to maintain lightning-fast category navigation across extensive coffee and accessories catalogs.'
+            ],
+            'tech_stack' => ['PHP 8.2', 'Laravel', 'MySQL', 'Redis', 'WebSockets', 'Thawani Gateway', 'Responsive UI/UX'],
+            'images' => [
+                'projects/alkatar.jpg'
+            ]
+        ],
+        'khairat-alanaam' => [
+            'title' => 'Khairat Al-Anaam — Fresh Butchery & Variable-Weight Meat Commerce',
+            'category' => 'FinTech & Omnichannel Commerce',
+            'filter_class' => 'filter-fintech filter-saas',
+            'badge' => 'Variable-Weight Commerce',
+            'role' => 'Senior Backend Engineer & Payment Integration Specialist',
+            'client' => 'Khairat Al-Anaam (Muscat, Oman)',
+            'date' => '2024 – Current',
+            'url' => 'https://khairat-alanaam.muscatappstest.com/',
+            'short_summary' => 'Specialized fresh meat and livestock commerce platform engineered for complex variable-weight configurations, custom butchery preparation specs, and OM Pay checkout.',
+            'description' => 'Developed Khairat Al-Anaam, a specialized fresh meat and butchery ordering ecosystem tailored for Oman\'s retail meat sector. Solved complex variable-weight ordering constraints, integrated Oman\'s national OM Pay digital payment infrastructure with secure webhooks and reconciliation logs, and enabled real-time kitchen prep-station ticket printing via WebSockets.',
+            'features' => [
+                'Variable-Weight & Custom Cuts Configuration: Engineered custom product attributes for butchery operations (packaging styles, preparation cuts, and dynamic weight-tier pricing).',
+                'OM Pay National Payment Gateway: Integrated Oman\'s OM Pay digital payment infrastructure with secure webhooks and reconciliation logs.',
+                'Real-Time Kitchen & Dispatch Alerts: Utilized WebSocket event broadcasting to stream incoming butchery orders directly to prep-station printers and delivery queues.'
+            ],
+            'tech_stack' => ['PHP 8.2', 'Laravel', 'MySQL', 'OM Pay Gateway', 'WebSockets', 'Redis', 'Variable Weight Engine'],
+            'images' => [
+                'projects/khairat.jpg'
+            ]
+        ],
         'clinova' => [
             'title' => 'Clinova — Smart Clinical Management & Electronic Health Records (EHR) SaaS',
             'category' => 'DevOps & HealthTech',
@@ -61,7 +126,7 @@ class PortfolioController extends Controller
             'role' => 'Lead Full-Stack Engineer & Database Architect',
             'client' => 'Clinova HealthTech SaaS',
             'date' => '2024 – Current',
-            'url' => 'https://wasl-x.com/',
+            'url' => 'https://clinova-eg.com/',
             'short_summary' => 'A secure, multi-tenant clinic and practice management SaaS built for medical centers, polyclinics, and independent practitioners to streamline patient visits, digital prescriptions, and billing.',
             'description' => 'Architected Clinova, a HIPAA-aligned multi-tenant healthcare SaaS and Electronic Health Records (EHR) platform. Delivers streamlined clinic workflows, from dynamic doctor appointment scheduling to diagnostic record management, digital drug prescriptions, and consolidated clinic branch billing.',
             'features' => [
@@ -85,7 +150,7 @@ class PortfolioController extends Controller
             'role' => 'Lead Backend Architect & System Designer',
             'client' => 'Enterprise Client (GCC & Egypt)',
             'date' => '2025 – Architecture Phase',
-            'url' => null,
+            'url' => 'https://erp.wasl-x.com/',
             'short_summary' => 'A specialized modular ERP architected for high financial governance, multi-warehouse stock reconciliation, POS operations, and automated real estate broker commission pipelines.',
             'description' => 'Architecting an enterprise-grade modular ERP and real estate asset management platform. Built to deliver rigorous GAAP financial compliance, multi-tiered audit logging, automated broker commission distributions, and distributed multi-warehouse inventory reconciliations with strict ACID transactional guarantees.',
             'features' => [
@@ -223,7 +288,7 @@ class PortfolioController extends Controller
             'role' => 'Full-Stack Developer (Freelance)',
             'client' => 'Alsa7a / Saha (Muscat, Oman)',
             'date' => '11/2025 – Current',
-            'url' => 'https://saha.wasl-x.com/login',
+            'url' => 'https://alsaha.tech/login',
             'short_summary' => 'Platform for delivering sports-related services (player photography, physiotherapy, training services) and enabling clubs to book or offer player services to third parties.',
             'description' => 'Multi-sided sports marketplace connecting 500+ athletes with certified service providers. Features automated commission distribution, escrow logic, provider vetting workflows, and Thawani payment integration.',
             'features' => [

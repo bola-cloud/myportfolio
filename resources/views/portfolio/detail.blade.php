@@ -44,7 +44,7 @@
   <!-- Portfolio Details Section -->
   <section id="portfolio-details" class="portfolio-details section">
 
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="container">
 
       @if(empty($project) || !is_array($project))
         <div class="alert alert-warning">No project data available to display.</div>
@@ -57,7 +57,7 @@
 
             <script type="application/json" class="swiper-config">
               {
-                "loop": true,
+                "loop": {{ count($images) > 1 ? 'true' : 'false' }},
                 "speed": 600,
                 "autoplay": {
                   "delay": 5000
@@ -95,7 +95,7 @@
         </div>
 
         <div class="col-lg-4">
-          <div class="portfolio-info shadow-sm p-4 rounded-4 bg-white border" data-aos="fade-up" data-aos-delay="200">
+          <div class="portfolio-info shadow-sm p-4 rounded-4 bg-white border">
             <h3 class="border-bottom pb-3 mb-3 fw-bold text-dark">Technical Specifications</h3>
             <ul class="list-unstyled mb-4">
               <li class="py-2 border-bottom d-flex justify-content-between align-items-center">
@@ -153,13 +153,46 @@
           </div>
           @endif
 
-          @if(in_array('Thawani', (array) $tech_stack))
+          @if(in_array('Thawani', (array) $tech_stack) || in_array('Thawani Gateway', (array) $tech_stack))
           <div class="portfolio-info mt-4 shadow-sm p-4 rounded-4 border bg-light" data-aos="fade-up" data-aos-delay="250">
             <h4 class="fw-bold text-dark d-flex align-items-center mb-2">
               <i class="bi bi-credit-card-2-front text-info me-2 fs-4"></i> Thawani Gateway (Oman)
             </h4>
             <p class="small text-muted mb-0">
               Complete server-side checkout tokenization, webhook callback verification, idempotent order fulfillment, and multi-currency reconciliations for Oman payment rails.
+            </p>
+          </div>
+          @endif
+
+          @if(in_array('OM Pay Gateway', (array) $tech_stack))
+          <div class="portfolio-info mt-4 shadow-sm p-4 rounded-4 border bg-light" data-aos="fade-up" data-aos-delay="260">
+            <h4 class="fw-bold text-dark d-flex align-items-center mb-2">
+              <i class="bi bi-wallet2 text-success me-2 fs-4"></i> OM Pay Gateway (Oman)
+            </h4>
+            <p class="small text-muted mb-0">
+              Integration of Oman's national digital payment infrastructure with end-to-end webhook validation, automated transactional reconciliation logs, and secure checkout sessions.
+            </p>
+          </div>
+          @endif
+
+          @if(in_array('Smart ERP REST API', (array) $tech_stack) || in_array('Smart ERP REST APIs', (array) $tech_stack))
+          <div class="portfolio-info mt-4 shadow-sm p-4 rounded-4 border bg-light" data-aos="fade-up" data-aos-delay="270">
+            <h4 class="fw-bold text-dark d-flex align-items-center mb-2">
+              <i class="bi bi-arrow-repeat text-primary me-2 fs-4"></i> Smart ERP Bi-Directional Sync
+            </h4>
+            <p class="small text-muted mb-0">
+              High-volume automated synchronization pipelines between Laravel and Smart ERP for live inventory balancing, price matrix updates, and automated sales invoice generation without race conditions.
+            </p>
+          </div>
+          @endif
+
+          @if(in_array('WhatsApp Business API', (array) $tech_stack) || in_array('WhatsApp Server-Side API', (array) $tech_stack))
+          <div class="portfolio-info mt-4 shadow-sm p-4 rounded-4 border bg-light" data-aos="fade-up" data-aos-delay="280">
+            <h4 class="fw-bold text-dark d-flex align-items-center mb-2">
+              <i class="bi bi-whatsapp text-success me-2 fs-4"></i> WhatsApp Ecosystem Integration
+            </h4>
+            <p class="small text-muted mb-0">
+              Automated product catalog mirroring reflecting dynamic stock levels directly in WhatsApp Commerce, alongside OTP verification microservices and dispatch notification streams.
             </p>
           </div>
           @endif
@@ -171,7 +204,7 @@
       {{-- Architectural Deep Dive --}}
       <div class="row gy-4 mt-4">
         <div class="col-lg-12">
-          <div class="portfolio-description p-4 p-md-5 rounded-4 bg-white border shadow-sm" data-aos="fade-up">
+          <div class="portfolio-description p-4 p-md-5 rounded-4 bg-white border shadow-sm">
             <h3 class="fw-bold text-dark mb-3"><i class="bi bi-layers-half text-primary me-2"></i>Architectural Overview & Engineering Scope</h3>
             <p class="fs-6 leading-relaxed text-secondary mb-4">{{ $description }}</p>
 
@@ -269,3 +302,48 @@
   </section>
 </main>
 @endsection
+
+@push('styles')
+<style>
+  /* Ensure case study content is unconditionally visible */
+  #portfolio-details,
+  #portfolio-details .container,
+  #portfolio-details .row,
+  #portfolio-details .portfolio-info,
+  #portfolio-details .portfolio-description,
+  #portfolio-details [data-aos],
+  #other-projects,
+  #other-projects [data-aos] {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+</style>
+@endpush
+
+@push('scripts')
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Immediate Swiper fallback activation
+    if (typeof Swiper !== 'undefined') {
+      document.querySelectorAll('.portfolio-details-slider').forEach(function(slider) {
+        if (!slider.swiper) {
+          try {
+            new Swiper(slider, {
+              speed: 600,
+              loop: {{ count($images) > 1 ? 'true' : 'false' }},
+              autoHeight: true,
+              pagination: {
+                el: slider.querySelector('.swiper-pagination'),
+                clickable: true
+              }
+            });
+          } catch(e) {
+            console.warn('Inline Swiper init fallback:', e);
+          }
+        }
+      });
+    }
+  });
+</script>
+@endpush
