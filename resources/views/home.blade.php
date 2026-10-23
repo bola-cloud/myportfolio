@@ -582,7 +582,7 @@
 
         <div class="container">
 
-            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
 
             <!-- Interactive Category Filters -->
             <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
@@ -606,16 +606,16 @@
                         <div class="portfolio-card shadow-sm rounded-4 overflow-hidden border bg-white h-100 d-flex flex-column {{ $isFlagship ? 'border-primary border-2 shadow' : '' }}">
                             
                             <!-- Card Media / Screenshot -->
-                            <div class="portfolio-thumb position-relative overflow-hidden" style="height: 230px; background: #0c1017;">
+                            <div class="portfolio-thumb position-relative overflow-hidden" style="height: 215px; background: #0c1017;">
                                 @if($thumb)
-                                    <img src="{{ asset($thumb) }}" class="w-100 h-100 object-fit-cover" alt="{{ data_get($proj, 'title') }}">
+                                    <img src="{{ asset($thumb) }}" class="w-100 h-100 object-fit-cover" alt="{{ data_get($proj, 'title') }}" loading="lazy">
                                 @else
                                     <div class="d-flex align-items-center justify-content-center h-100 text-white-50">Enterprise Platform</div>
                                 @endif
 
-                                <!-- Category Badge -->
-                                <div class="position-absolute top-0 start-0 m-3 d-flex flex-column gap-1">
-                                    <span class="badge bg-dark bg-opacity-75 text-white backdrop-blur px-3 py-1 rounded-pill small fw-semibold">
+                                <!-- Category & Status Badges (Horizontal, non-intrusive) -->
+                                <div class="position-absolute top-0 start-0 m-3 d-flex flex-wrap gap-1" style="max-width: 85%;">
+                                    <span class="badge bg-dark bg-opacity-75 text-white backdrop-blur px-2.5 py-1 rounded-pill small fw-semibold" style="font-size: 0.72rem;">
                                         {{ data_get($proj, 'category') }}
                                     </span>
                                     @if($badge)
@@ -631,7 +631,7 @@
                                                 default => 'bg-info text-white fw-bold'
                                             };
                                         @endphp
-                                        <span class="badge {{ $badgeClass }} px-2 py-1 rounded-pill small">
+                                        <span class="badge {{ $badgeClass }} px-2 py-1 rounded-pill small" style="font-size: 0.72rem;">
                                             {{ $badge }}
                                         </span>
                                     @endif
@@ -655,31 +655,31 @@
                                 </div>
                             </div>
 
-                            <!-- Card Content -->
+                            <!-- Card Content (Uniform Heights & Precision Clamping) -->
                             <div class="portfolio-body p-4 d-flex flex-column flex-grow-1">
-                                <div class="text-primary small fw-bold text-uppercase mb-1" style="font-size: 0.72rem; letter-spacing: 0.6px;">
+                                <div class="portfolio-card-role text-primary small fw-bold text-uppercase mb-1" style="font-size: 0.72rem; letter-spacing: 0.6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                     {{ data_get($proj, 'role') }}
                                 </div>
-                                <h4 class="card-title fw-bold text-dark mb-2 fs-5">
+                                <h4 class="card-title portfolio-card-title fw-bold text-dark mb-2 fs-5" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.7em; line-height: 1.35;">
                                     <a href="{{ route('portfolio.detail', $slugKey) }}" class="text-dark text-decoration-none">
                                         {{ data_get($proj, 'title') }}
                                     </a>
                                 </h4>
-                                <p class="text-secondary small mb-3 flex-grow-1" style="line-height: 1.55;">
-                                    {{ \Illuminate\Support\Str::limit(data_get($proj, 'short_summary', data_get($proj, 'description')), 120) }}
+                                <p class="portfolio-card-desc text-secondary small mb-3 flex-grow-1" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; min-height: 4.65em; line-height: 1.55;">
+                                    {{ data_get($proj, 'short_summary', data_get($proj, 'description')) }}
                                 </p>
 
-                                <!-- Core Tech Micro-badges -->
-                                <div class="d-flex flex-wrap gap-1 mb-3">
+                                <!-- Core Tech Micro-badges (Fixed Height) -->
+                                <div class="portfolio-card-tech d-flex flex-wrap gap-1 mb-3 align-items-center" style="min-height: 52px; align-content: flex-start;">
                                     @foreach(array_slice((array) data_get($proj, 'tech_stack', []), 0, 4) as $tech)
-                                        <span class="badge bg-light text-dark border small fw-normal px-2 py-1">{{ $tech }}</span>
+                                        <span class="badge bg-light text-dark border small fw-normal px-2 py-1" style="font-size: 0.72rem;">{{ $tech }}</span>
                                     @endforeach
                                     @if(count((array) data_get($proj, 'tech_stack', [])) > 4)
-                                        <span class="badge bg-light text-muted border small px-2 py-1">+{{ count((array) data_get($proj, 'tech_stack')) - 4 }}</span>
+                                        <span class="badge bg-light text-muted border small px-2 py-1" style="font-size: 0.72rem;">+{{ count((array) data_get($proj, 'tech_stack')) - 4 }}</span>
                                     @endif
                                 </div>
 
-                                <!-- Card Actions -->
+                                <!-- Card Actions (Pinned to Bottom) -->
                                 <div class="pt-3 border-top mt-auto d-flex align-items-center justify-content-between">
                                     <a href="{{ route('portfolio.detail', $slugKey) }}" class="btn btn-sm btn-outline-primary rounded-pill px-3 fw-semibold">
                                         Case Study <i class="bi bi-arrow-right ms-1"></i>
@@ -964,13 +964,33 @@
     transform: translateY(-2px);
 }
 
-/* Portfolio Card Enhancements */
+/* Portfolio Card Enhancements & Uniform Grid */
 .portfolio-card {
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .portfolio-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+.portfolio-thumb {
+    height: 215px !important;
+    background: #0c1017;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.portfolio-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.4s ease;
+}
+.portfolio-card:hover .portfolio-thumb img {
+    transform: scale(1.05);
 }
 .portfolio-hover-overlay {
     position: absolute;
@@ -986,6 +1006,47 @@
 .backdrop-blur {
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
+}
+.portfolio-card-role {
+    font-size: 0.72rem;
+    letter-spacing: 0.6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.portfolio-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 2.7em;
+    margin-bottom: 0.5rem;
+}
+.portfolio-card-desc {
+    font-size: 0.85rem;
+    line-height: 1.55;
+    color: #64748b;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 4.65em;
+    margin-bottom: 0.85rem;
+}
+.portfolio-card-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    min-height: 52px;
+    align-content: flex-start;
+    margin-bottom: 1rem;
+}
+.portfolio-card-tech .badge {
+    font-size: 0.72rem;
+    font-weight: 500;
 }
 
 /* Print Friendly Styles for Download CV */
