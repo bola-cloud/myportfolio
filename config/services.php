@@ -31,4 +31,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'waslx' => [
+        'broadcast_url' => env('WASLX_BROADCAST_URL', 'https://otp.wasl-x.com/api/v1/broadcast'),
+        'token' => env('WASLX_BROADCAST_TOKEN'),
+        'recipient_number' => env('WASLX_RECIPIENT_NUMBER', '201555622169'),
+    ],
+
 ];
